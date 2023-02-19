@@ -37,7 +37,7 @@ export function NewsletterForm({
         </label>
         <input
           required
-          placeholder="Your best email&hellip;"
+          placeholder="Ваша электронная почта&hellip;"
           id="email"
           name="email"
           type="email"

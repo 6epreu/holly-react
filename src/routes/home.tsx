@@ -6,8 +6,9 @@ export default function HomePage() {
   return (
     <Layout>
       <Hero
-        title="Landing template for startups"
-        content="Our landing page template works for all the devices, so you only have to setup it once, and get beautiful results forever."
+        title="Indoor location"
+        content="Основная цель проекта - это предоставить возможность построения маршрута для пользователя внутри помещения где сигнал gps/глонас слаб или отсутствует полностью."
+        subcontent="Для получения более детальной информации о проекте посмотрите видео функциональных возможностей или заполните форму обратной связи"
         illustration={<HeroIllustration />}
       />
     </Layout>

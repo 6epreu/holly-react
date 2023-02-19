@@ -11,10 +11,12 @@ type ScrollRevealRefElement =
 
 export function Hero({
   content,
+  subcontent,
   illustration,
   title,
 }: {
   content: string
+  subcontent: string
   illustration?: ReactNode
   title: string
 }) {
@@ -69,6 +71,14 @@ export function Hero({
               >
                 {content}
               </p>
+              <p
+                ref={(el: ScrollRevealRefElement) =>
+                  scrollRevealRef.current.push(el)
+                }
+                className="prose prose-xl px-16 text-gray-500 md:px-0"
+              >
+                {subcontent}
+              </p>
             </div>
 
             <div
@@ -78,7 +88,7 @@ export function Hero({
             >
               <NewsletterForm
                 className="m-0 mt-8 max-w-md md:flex"
-                submitText="Get early access"
+                submitText="Запросить доступ"
                 onSubmit={onNewsletterSubmit}
               />
             </div>
