@@ -24,6 +24,7 @@ export default function ContactPage() {
     }
 
     await fetch('https://dev.indoor.api.ledgerleopard.com/api/access', options)
+      .then(() => setState(undefined))
       .catch((e) => console.error(e))
       .finally(() => setIsSuccess(true));
   }
