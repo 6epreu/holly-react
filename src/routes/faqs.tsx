@@ -5,7 +5,7 @@ export default function FaqsPage() {
   return (
     <Layout>
       <Article>
-        <ArticleContent title="FAQ's">
+        <ArticleContent title="ЧаВо">
           <p>Часто задаваемые вопросы</p>
           <details
             className="mt-4 block rounded-sm border px-4 open:border-primary-400 hover:border-primary-300"

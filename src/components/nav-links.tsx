@@ -1,9 +1,9 @@
 import { NavLink } from 'react-router-dom'
 
 const NAV_LINKS = [
-  { name: 'Contact', to: '/contact' },
+  { name: 'Контакты', to: '/contact' },
   // { name: 'About Us', to: '/about' },
-  { name: "FAQ's", to: '/faqs' },
+  { name: "ЧаВо", to: '/faqs' },
   // { name: 'Support', to: '/support' },
 ]
 
