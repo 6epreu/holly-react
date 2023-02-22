@@ -36,10 +36,6 @@ export default function ContactPage() {
           <form
             onSubmit={handleSubmit}
             className={classnames('newsletter-form is-revealing')}
-            action="mailto:zhdanov.vladislav@ledgerleopard.com"
-            method="POST"
-            encType="text/plain"
-            name="EmailForm"
           >
             <div className="mb-4">
               <label className="hidden" htmlFor="name" aria-hidden="true">
