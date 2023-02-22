@@ -2,9 +2,9 @@ import { NavLink } from 'react-router-dom'
 
 const NAV_LINKS = [
   { name: 'Contact', to: '/contact' },
-  { name: 'About Us', to: '/about' },
+  // { name: 'About Us', to: '/about' },
   { name: "FAQ's", to: '/faqs' },
-  { name: 'Support', to: '/support' },
+  // { name: 'Support', to: '/support' },
 ]
 
 export function NavLinks({ className }: { className?: string }) {

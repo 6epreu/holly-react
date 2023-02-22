@@ -22,7 +22,7 @@ export default function ContactPage() {
   return (
     <Layout>
       <Article>
-        <ArticleContent title="Contact">
+        <ArticleContent title="Контакты">
           <form
             onSubmit={handleSubmit}
             className={classnames('newsletter-form is-revealing')}
@@ -118,8 +118,8 @@ export default function ContactPage() {
             alt="Lorem Picsum"
             className="mx-auto lg:aspect-[5/7] lg:w-full"
             width="420"
-            height="640"
-            src="https://picsum.photos/420/640?grayscale"
+            height="500"
+            src="../assets/contacts1_grey.jpeg"
           />
         </ArticleMedia>
       </Article>
