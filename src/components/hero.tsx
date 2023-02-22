@@ -3,6 +3,7 @@ import { useEffect, useRef } from 'react'
 import ScrollReveal from 'scrollreveal'
 
 import { NewsletterForm } from './newsletter-form'
+import {useNavigate} from "react-router";
 
 type ScrollRevealRefElement =
   | HTMLHeadingElement
@@ -21,7 +22,7 @@ export function Hero({
   title: string
 }) {
   const scrollRevealRef = useRef<ScrollRevealRefElement[]>([])
-
+  const navigate = useNavigate()
   useEffect(() => {
     if (scrollRevealRef.current.length > 0) {
       scrollRevealRef.current.map((ref, index) =>
@@ -39,11 +40,12 @@ export function Hero({
   }, [])
 
   function onNewsletterSubmit(values: any) {
-    return new Promise((resolve) => {
-      setTimeout(() => {
-        resolve({ values })
-      }, 1000)
-    })
+    // return new Promise((resolve) => {
+    //   setTimeout(() => {
+    //     resolve({ values })
+    //   }, 1000)
+    // })
+    navigate("/contact")
   }
 
   return (
@@ -86,11 +88,15 @@ export function Hero({
                 scrollRevealRef.current.push(el)
               }
             >
-              <NewsletterForm
-                className="m-0 mt-8 max-w-md md:flex"
-                submitText="Запросить доступ"
-                onSubmit={onNewsletterSubmit}
-              />
+              <div className="control">
+                <button
+                    className="-mt-px inline-flex cursor-pointer justify-center whitespace-nowrap rounded-sm border-0 bg-gradient-to-r from-secondary-500 to-secondary-400 py-4 px-7 text-center font-medium leading-4 text-white no-underline shadow-lg"
+                    type="submit"
+                    onClick={onNewsletterSubmit}
+                >
+                  {"Запросить доступ"}
+                </button>
+              </div>
             </div>
           </div>
 
