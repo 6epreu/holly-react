@@ -12,12 +12,21 @@ export default function ContactPage() {
     [e.target.name]: e.target.value || ''
   });
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log(state);
-    setIsSuccess(true);
-  }
+    const options: any = {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        Accept: 'application/json',
+      },
+      body: JSON.stringify(state)
+    }
 
+    await fetch('https://dev.indoor.api.ledgerleopard.com/api/access', options)
+      .catch((e) => console.error(e))
+      .finally(() => setIsSuccess(true));
+  }
 
   return (
     <Layout>
@@ -26,6 +35,10 @@ export default function ContactPage() {
           <form
             onSubmit={handleSubmit}
             className={classnames('newsletter-form is-revealing')}
+            action="mailto:zhdanov.vladislav@ledgerleopard.com"
+            method="POST"
+            encType="text/plain"
+            name="EmailForm"
           >
             <div className="mb-4">
               <label className="hidden" htmlFor="name" aria-hidden="true">
