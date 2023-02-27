@@ -173,7 +173,7 @@ export function HeroIllustration() {
         <iframe
           width="640"
           height="380"
-          src="https://rutube.ru/play/embed/6cd04e7650ee8bb9b7d28a30ef6aeb7d"
+          src="https://rutube.ru/play/embed/8331391461bbfbc4f4bdb48b6eb80aba/"
           frameBorder="0" allow="clipboard-write; autoplay"
           // webkitAllowFullScreen
           // mozallowfullscreen
