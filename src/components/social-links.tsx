@@ -1,6 +1,6 @@
 import classnames from 'clsx'
 
-const SOCIAL_LINKS = [
+const SOCIAL_LINKS: any[] = [
 //   {
 //     name: `Facebook`,
 //     url: `https://facebook.com`,

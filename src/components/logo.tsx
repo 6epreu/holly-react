@@ -4,7 +4,7 @@ export function Logo({ className }: { className?: string }) {
           alt="Lorem Picsum"
           width="50"
           height="50"
-          src="../assets/logo.jpeg"
+          src="logo.jpeg"
       />
     // <svg
     //   className={className}

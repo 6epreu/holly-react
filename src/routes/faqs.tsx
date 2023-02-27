@@ -1,5 +1,5 @@
-import { Article, ArticleContent, ArticleMedia } from '@/components/article'
-import { Layout } from '@/components/layout'
+import { Article, ArticleContent, ArticleMedia } from '../components/article'
+import { Layout } from '../components/layout'
 
 export default function FaqsPage() {
   return (
@@ -69,7 +69,7 @@ export default function FaqsPage() {
             className="mx-auto lg:aspect-[5/7] lg:w-full"
             width="400"
             height="500"
-            src="../assets/FAQ.jpg"
+            src="FAQ.jpg"
           />
         </ArticleMedia>
       </Article>

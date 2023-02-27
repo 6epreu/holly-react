@@ -1,11 +1,11 @@
-import { Article, ArticleContent, ArticleMedia } from '@/components/article'
-import { Layout } from '@/components/layout'
+import { Article, ArticleContent, ArticleMedia } from '../components/article'
+import { Layout } from '../components/layout'
 import { useState } from 'react'
 
 export default function SupportPage() {
   const [success, setSuccess] = useState(false)
 
-  function handleClick(e) {
+  function handleClick(e: any) {
     e.preventDefault()
     setSuccess(true)
   }

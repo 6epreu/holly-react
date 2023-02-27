@@ -1,5 +1,5 @@
-import { Article, ArticleContent, ArticleMedia } from '@/components/article'
-import { Layout } from '@/components/layout'
+import { Article, ArticleContent, ArticleMedia } from '../components/article'
+import { Layout } from '../components/layout'
 
 export default function AboutPage() {
   return (

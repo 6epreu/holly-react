@@ -1,20 +1,20 @@
-import AboutPage from '@/routes/about'
-import ContactPage from '@/routes/contact'
-import FaqsPage from '@/routes/faqs'
-import HomePage from '@/routes/home'
-import SupportPage from '@/routes/support'
+import AboutPage from './routes/about'
+import ContactPage from './routes/contact'
+import FaqsPage from './routes/faqs'
+import HomePage from './routes/home'
+import SupportPage from './routes/support'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 import { ScrollToTop } from './components/scroll-to-top'
 
-export default function App() {
+function App() {
   /**
    * Vite exposes env variables on the special import.meta.env object.
    * Basename needs to be set for GitHub Pages to function properly.
    *
    * @link https://vitejs.dev/guide/env-and-mode.html
    */
-  const basename = import.meta.env.BASE_URL
+  const basename = '/' //import.meta.env.BASE_URL
 
   return (
     <BrowserRouter basename={basename}>
@@ -28,5 +28,7 @@ export default function App() {
         </Routes>
       </ScrollToTop>
     </BrowserRouter>
-  )
+  );
 }
+
+export default App;

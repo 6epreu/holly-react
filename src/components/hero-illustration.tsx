@@ -175,8 +175,8 @@ export function HeroIllustration() {
           height="380"
           src="https://rutube.ru/play/embed/6cd04e7650ee8bb9b7d28a30ef6aeb7d"
           frameBorder="0" allow="clipboard-write; autoplay"
-          webkitAllowFullScreen
-          mozallowfullscreen
+          // webkitAllowFullScreen
+          // mozallowfullscreen
           allowFullScreen
         />
       </div>

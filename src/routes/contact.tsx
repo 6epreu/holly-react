@@ -1,5 +1,5 @@
-import { Article, ArticleContent, ArticleMedia } from '@/components/article'
-import { Layout } from '@/components/layout'
+import { Article, ArticleContent, ArticleMedia } from '../components/article'
+import { Layout } from '../components/layout'
 import classnames from "clsx";
 import { ChangeEvent, FormEvent, useState } from "react";
 
@@ -134,7 +134,7 @@ export default function ContactPage() {
             className="mx-auto lg:aspect-[5/7] lg:w-full"
             width="420"
             height="500"
-            src="../assets/contacts1_grey.jpeg"
+            src="contacts1_grey.jpeg"
           />
         </ArticleMedia>
       </Article>
